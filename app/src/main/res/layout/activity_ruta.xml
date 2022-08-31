@@ -5,28 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Llamar">
+    tools:context=".Ruta" >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Realiza una llamada"
+        android:text="Donde desea ir?"
         android:textSize="34sp"
         android:layout_marginTop="20dp"
         />
 
     <EditText
-        android:id="@+id/edtNumero"
+        android:id="@+id/edtLugar"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Telefono" />
+        android:hint="Nombre del lugar" />
 
     <Button
-        android:id="@+id/btnRealizarLlamada"
+        android:id="@+id/btnRuta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/makeCallText" />
+        android:text="@string/routeText" />
 </LinearLayout>

@@ -5,28 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Llamar">
+    tools:context=".MensajeTexto">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Realiza una llamada"
+        android:text="Envia un mensaje"
         android:textSize="34sp"
         android:layout_marginTop="20dp"
         />
 
     <EditText
-        android:id="@+id/edtNumero"
+        android:id="@+id/edtNumeroMensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Telefono" />
 
-    <Button
-        android:id="@+id/btnRealizarLlamada"
+    <EditText
+        android:id="@+id/edtMensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/makeCallText" />
+        android:hint="Mensaje" />
+
+    <Button
+        android:id="@+id/btnEnviarMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sendMessage" />
+
 </LinearLayout>
