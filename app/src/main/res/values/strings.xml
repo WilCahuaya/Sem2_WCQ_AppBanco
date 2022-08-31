@@ -7,4 +7,7 @@
     <string name="reportText">Reporte</string>
     <string name="contactsText">Contactos</string>
     <string name="cameraText">Camara</string>
+    <string name="toCallText">Llamar</string>
+    <string name="makeCallText">Llamar número</string>
+    <string name="registerText">Registrar</string>
 </resources>

@@ -36,12 +36,12 @@
         android:hint="Contraseña"
         android:id="@+id/edtPassword"
         />
+
     <Button
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:id="@+id/btnIngresar"
-        android:text="Ingresar"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/loginText" />
 
 </LinearLayout>

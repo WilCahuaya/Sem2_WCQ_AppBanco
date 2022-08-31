@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btnLogin, btnRegistrar, btnContactos,btnReporte,btnSplash,btnGoogle,btnCamara;
+    Button btnLogin, btnRegistrar, btnContactos,btnReporte,btnSplash,btnGoogle,btnCamara, btnLlamar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSplash=findViewById(R.id.btnSplash);
         btnGoogle=findViewById(R.id.btnGoogle);
         btnCamara=findViewById(R.id.btnCamara);
+        btnLlamar=findViewById(R.id.btnLlamar);
 
         btnContactos.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSplash.setOnClickListener(this);
         btnGoogle.setOnClickListener(this);
         btnCamara.setOnClickListener(this);
+        btnLlamar.setOnClickListener(this);
 
         String sCorreoRecibido=getIntent().getStringExtra("nombreCorreo");
         String sUsuaioRecibido=getIntent().getStringExtra("nombreUsuario");
@@ -74,6 +76,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.btnCamara:{
                 Intent i=new Intent("android.media.action.IMAGE_CAPTURE");
+                startActivity(i);
+                break;
+            }
+            case R.id.btnLlamar:{
+                Intent i=new Intent(this,Llamar.class);
                 startActivity(i);
                 break;
             }
