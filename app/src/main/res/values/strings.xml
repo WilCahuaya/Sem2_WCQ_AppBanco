@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Sem2_WCQ_AppBanco</string>
+    <string name="loginText">Ingresar</string>
+    <string name="splashText">Bienvenido</string>
+    <string name="recordText">Registrar</string>
+    <string name="browser">Google</string>
+    <string name="reportText">Reporte</string>
+    <string name="contactsText">Contactos</string>
+    <string name="cameraText">Camara</string>
 </resources>
