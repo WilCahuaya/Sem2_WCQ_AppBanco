@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
-    EditText edtCorreo, edtUsuario,edtPassword;
+    EditText edtCorreo,edtPassword;
     Button btnIngresar;
 
     @Override
@@ -18,7 +19,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
 
         edtCorreo=findViewById(R.id.edtCorreo);
-        edtUsuario=findViewById(R.id.edtUsuario);
         edtPassword=findViewById(R.id.edtPassword);
         btnIngresar=findViewById(R.id.btnIngresar);
 
@@ -27,15 +27,22 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent i=new Intent(this,MainActivity.class);
+        Intent i=new Intent(this,Home.class);
         String sCorreo=edtCorreo.getText().toString();
-        String sUsuario=edtUsuario.getText().toString();
         String sPassword=edtPassword.getText().toString();
+        String correo="x@x.com";
+        String pass="123";
 
-        i.putExtra("nombreCorreo",sCorreo);
-        i.putExtra("nombreUsuario",sUsuario);
-        i.putExtra("nombrePassword",sPassword);
 
-        startActivity(i);
+        if("x@x.com".equals(sCorreo) && "123".equals(sCorreo)){
+            startActivity(i);
+        }else{
+            Toast.makeText(this,"Correo o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+        }
+
+//        i.putExtra("nombreCorreo",sCorreo);
+//        i.putExtra("nombrePassword",sPassword);
+
+
     }
 }

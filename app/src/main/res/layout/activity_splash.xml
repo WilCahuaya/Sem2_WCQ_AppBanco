@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/banner_splash_screen"
         android:scaleType="center"
+        android:id="@+id/splashLogo"
         ></ImageView>
     <View
 
@@ -45,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:text="E Corp"
                 android:textColor="@color/white"
-                android:textSize="28sp"></TextView>
+                android:textSize="28sp"
+                android:id="@+id/txtSplashTexto"></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
