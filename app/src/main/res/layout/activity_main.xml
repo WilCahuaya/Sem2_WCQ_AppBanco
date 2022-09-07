@@ -22,10 +22,10 @@
 
     <Button
         android:id="@+id/btnSplash"
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/loginText" />
+        android:layout_marginTop="30dp"
+        android:text="@string/splashText" />
 
     <Button
         android:id="@+id/btnLogin"
