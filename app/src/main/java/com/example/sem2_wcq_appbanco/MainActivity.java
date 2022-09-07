@@ -45,9 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5.setOnClickListener(this);
 
         String sCorreoRecibido=getIntent().getStringExtra("nombreCorreo");
-        String sUsuaioRecibido=getIntent().getStringExtra("nombreUsuario");
         String sPassRecibido=getIntent().getStringExtra("nombrePassword");
-        Toast.makeText(this, "Los datos recibidos son: \nCorreo->"+sCorreoRecibido+"\nUsuario-> "+sUsuaioRecibido+"\nContraseña-> "+sPassRecibido, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Los datos recibidos son: \nCorreo->"+sCorreoRecibido+"\nUsuario-> "+"\nContraseña-> "+sPassRecibido, Toast.LENGTH_SHORT).show();
     }
 
     @Override

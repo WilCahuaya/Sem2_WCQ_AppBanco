@@ -25,13 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/splashText" />
+        android:text="@string/textsplash" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/loginText" />
+        android:text="@string/textlogin" />
 
     <Button
         android:id="@+id/btnRegistrar"

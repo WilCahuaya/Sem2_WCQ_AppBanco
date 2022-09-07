@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">Sem2_WCQ_AppBanco</string>
-    <string name="loginText">Ingresar</string>
-    <string name="splashText">Bienvenido</string>
+    <string name="app_name">Sem2AppBanco_XYZ</string>
+    <string name="textsplash">Inicio</string>
+    <string name="textlogin">Autenticar</string>
     <string name="recordText">Registrar</string>
+    <string name="textQuery">Consultar</string>
     <string name="browser">Google</string>
     <string name="reportText">Reporte</string>
     <string name="contactsText">Contactos</string>
-    <string name="cameraText">Abrir Camara</string>
+    <string name="cameraText">Camara</string>
+    <string name="cameraAbrirText">Abrir Camara</string>
     <string name="toCallText">Llamar</string>
     <string name="makeCallText">Llamar número</string>
     <string name="registerText">Registrar</string>
@@ -17,4 +19,7 @@
     <string name="sendMessage">Enviar Mensaje</string>
     <string name="sendText">Enviar Mensajes</string>
     <string name="nameCorporation">E Corp</string>
+    <string name="textEmail">Correo Electrónico</string>
+    <string name="textContraseña">Contraseña</string>
+    <string name="textBtnIniciar">Iniciar Sesión</string>
 </resources>
