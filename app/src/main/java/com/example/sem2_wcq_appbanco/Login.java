@@ -27,14 +27,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent i=new Intent(this,Home.class);
         String sCorreo=edtCorreo.getText().toString();
         String sPassword=edtPassword.getText().toString();
-        String correo="x@x.com";
-        String pass="123";
-
-
-        if("x@x.com".equals(sCorreo) && "123".equals(sCorreo)){
+        if("x@x.com".equals(sCorreo) && "123".equals(sPassword)){
+            Intent i=new Intent(this,Home.class);
             startActivity(i);
         }else{
             Toast.makeText(this,"Correo o contraseña incorrecta", Toast.LENGTH_SHORT).show();
